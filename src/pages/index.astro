@@ -2,10 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
 
+import SectionContainer from "../components/SectionContainer.astro";
+
 import SocialPill from "../components/icons/SocialPill.astro";
 import LinkedInIcon from "../components/icons/LinkedIn.astro";
 import GitHubIcon from "../components/icons/GitHub.astro";
 import MailIcon from "../components/icons/Mail.astro";
+
+import Experience from "../components/Experience.astro";
+import BriefcaseIcon from "../components/icons/Briefcase.astro";
 ---
 
 <Layout
@@ -13,7 +18,7 @@ import MailIcon from "../components/icons/Mail.astro";
 	description="Desarrollador y programador web con +7 años de experiencia en el desarrollo de aplicaciones web."
 >
 	<main>
-		<section class="w-full lg:w-[740px] mx-auto py-44">
+		<SectionContainer class="py-44 pb-24" id="top">
 			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
 				Hey, soy Esteban Diaz
 				<a
@@ -49,6 +54,14 @@ import MailIcon from "../components/icons/Mail.astro";
 					stban94diaz@gmail.com
 				</SocialPill>
 			</nav>
-		</section>
+		</SectionContainer>
+
+		<SectionContainer id="experience">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+				<BriefcaseIcon class="size-7" />
+				Experience laboral
+			</h2>
+			<Experience />
+		</SectionContainer>
 	</main>
 </Layout>

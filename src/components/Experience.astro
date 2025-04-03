@@ -1,0 +1,67 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+  {
+    company: "Comware",
+    position: "Desarrollador full stack senior",
+    startDate: "Julio 2023",
+    endDate: "Actualidad",
+    description: "Desarrollo de funcionalidades y soluciones que generan valor al desarrollo de aplicaciones del lado del frontend y del backend, gestionando y llevando a cabo proyectos de alto impacto en empresas gubernamentales como Icetex, FNG, Alcaldia de Bogotá, Cremil, Cancillería, entre otros, así como proyectos internos de nómina y gestión de recursos humanos, con implementaciones importantes en servicios como los de Aportes en línea para pagos de seguridad y reportes ante la DIAN, entre otros temas, como la administración a servidores y DBA.",
+  },
+  {
+    company: "CSmart",
+    position: "Desarrollador full stack",
+    startDate: "Enero 2023",
+    endDate: "Julio 2023",
+    description: "Desarrollo de funcionalidades y soluciones que generan valor al desarrollo de aplicaciones móviles del lado del frontend y del backend, en temas como login y registro de usuarios, manipulación, edición y persistencia de recursos multimedia, sincronización, estructuración de datos, entre otros.",
+  },
+  {
+    company: "ADL Proptech",
+    position: "Desarrollador frontend SSr",
+    startDate: "Abril 2022",
+    endDate: "Enero 2023",
+    description: "Desarrollo de funcionalidades y soluciones que generan valor a la adquisición de metro cuadrado por parte del proyecto en el área de sellers, ocupando funciones como líder técnico, a nivel funcional, además de participar en muchos proyectos como blockchain, mobile, entre otros.",
+  },
+  {
+    company: "Davinci Technologies",
+    position: "Ingeniero de desarrollo",
+    startDate: "Agosto 2020",
+    endDate: "Abril 2022",
+    description: "Desarrollo de nuevas funcionalidades, soluciones, soporte y análisis a bugs de proyectos nuevos y antiguos, trabajando de la mano con clientes de importantes empresas como Davivienda, Texmoda, Frontera, entre otras.",
+  },
+  {
+    company: "Xoftix",
+    position: "Ingeniero de desarrollo junior",
+    startDate: "Diciembre 2018",
+    endDate: "Julio 2020",
+    description: "Diseño y desarrollo de nuevas características y solución de issues, mantenimiento y reingeniería de software principalmente para el Sistema Judicial de Panamá, desarrollo app móviles para el control penitencial de casa por cárcel y life recognition",
+  },
+  {
+    company: "Kommit",
+    position: "Junior Software Developer",
+    startDate: "Julio 2018",
+    endDate: "Septiembre 2018",
+    description: "Desarrollo en Ruby on Rails, NodeJS y ReactJS, diseño y desarrollo de nuevas características y solución de issues, trabajo por proyectos internos.",
+  },
+  {
+    company: "UDENAR",
+    position: "Monitor Admin Sistemas - Monitor soporte",
+    startDate: "Septiembre 2015",
+    endDate: "Junio 2018",
+    description: "Mantenimiento de servidores, soporte a servicios correo electrónico y aula UDENAR, soporte a webmaster (correo, intranet, soporte), mantenimiento de equipos de computo.",
+  }
+]
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+  {
+    EXPERIENCE.map((experience) => {
+      return (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+      )
+    })
+  }
+</ol>
