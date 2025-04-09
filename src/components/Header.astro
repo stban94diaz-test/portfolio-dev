@@ -1,15 +1,38 @@
-<header class="flex justify-between items-center py-5 w-[1120px] mx-auto">
+---
+import HomeIcon from "./icons/Home.astro";
+import AboutIcon from "./icons/About.astro";
+import ExperienceIcon from "./icons/Experience.astro";
+import ProjectsIcon from "./icons/Projects.astro";
+import ContactIcon from "./icons/Contact.astro";
+---
+
+<header class="flex justify-between items-center py-5 w-full lg:w-[740px] mx-auto">
   <img
     src="https://github.com/stban94diaz.png"
     alt="stban94diaz photo"
     class="rounded-full w-12 h-12"
   >
 
-  <nav class="flex flex-row gap-x-10 opacity-80">
-    <a href="#top">Inicio</a>
-    <a href="#about">Sobre mí</a>
-    <a href="#experience">Experiencia</a>
-    <a href="#portfolio">Proyectos</a>
-    <a href="#contact">Contacto</a>
+  <nav class="flex flex-row gap-x-5 xl:gap-x-10 opacity-80">
+    <a href="#top">
+      <span class="hidden md:block">Inicio</span>
+      <HomeIcon class="block md:hidden" />
+    </a>
+    <a href="#about">
+      <span class="hidden md:block">Sobre mí</span>
+      <AboutIcon class="block md:hidden" />
+    </a>
+    <a href="#experience">
+      <span class="hidden md:block">Experiencia</span>
+      <ExperienceIcon class="block md:hidden" />
+    </a>
+    <a href="#portfolio">
+      <span class="hidden md:block">Proyectos</span>
+      <ProjectsIcon class="block md:hidden" />
+    </a>
+    <a href="#contact">
+      <span class="hidden md:block">Contacto</span>
+      <ContactIcon class="block md:hidden" />
+    </a>
   </nav>
 </header>
