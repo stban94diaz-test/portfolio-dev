@@ -11,6 +11,9 @@ import MailIcon from "../components/icons/Mail.astro";
 
 import Experience from "../components/Experience.astro";
 import BriefcaseIcon from "../components/icons/Briefcase.astro";
+
+import CodeIcon from "../components/icons/Code.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
@@ -57,11 +60,19 @@ import BriefcaseIcon from "../components/icons/Briefcase.astro";
 		</SectionContainer>
 
 		<SectionContainer id="experience">
-			<h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center">
 				<BriefcaseIcon class="size-7" />
 				Experience laboral
 			</h2>
 			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="portfolio">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center">
+				<CodeIcon class="size-7" />
+				Projects
+			</h2>
+			<Projects />
 		</SectionContainer>
 	</main>
 </Layout>
