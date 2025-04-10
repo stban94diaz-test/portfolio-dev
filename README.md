@@ -1,4 +1,7 @@
-# Astro Starter Kit: Basics
+# Portfolio for programmers and developers
+
+![Captura de pantalla 2025-04-09 a la(s) 9 30 05 p m](https://github.com/user-attachments/assets/d701758d-4dfb-487d-ba67-119bbf5bdd5e)
+
 
 ```sh
 pnpm create astro@latest -- --template basics
